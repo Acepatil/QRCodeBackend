@@ -15,9 +15,9 @@ def create_qr():
     
     data = request.json
     if data.get('isOpen'):
-        text=f'{data.get('URL')}'
+        text=f"{data.get('URL')}"
     else:
-        text=f'Name: {data.get('name')} \n Phone Number: {data.get('phoneNumber')}'
+        text=f"Name: {data.get('name')} \n Phone Number: {data.get('phoneNumber')}"
     if not text:
         return jsonify({'error': 'No comment provided'}), 400
     
