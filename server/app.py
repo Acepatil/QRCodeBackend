@@ -28,5 +28,5 @@ def create_qr():
 
     return send_file(img_io, mimetype='image/png', as_attachment=True, download_name='qrcode.png')
 
-# if __name__ == '__main__':
-#     app.run(debug=True, port=8080)
+if __name__ == '__main__':
+    app.run(debug=True)
